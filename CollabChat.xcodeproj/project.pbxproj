@@ -14,6 +14,12 @@
 		1F41C2951E0C7F000052B9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */; };
 		1F41C2A01E0C7F000052B9B6 /* CollabChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C29F1E0C7F000052B9B6 /* CollabChatTests.swift */; };
 		1F41C2AB1E0C7F000052B9B6 /* CollabChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C2AA1E0C7F000052B9B6 /* CollabChatUITests.swift */; };
+		1F41C2BB1E0C86750052B9B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */; };
+		1F41C2BC1E0C88990052B9B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */; };
+		1F41C2BD1E0C889A0052B9B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */; };
+		2C24F8C4C628D3C9151015A6 /* Pods_CollabChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DFD77DF58DE99418D2F8F2 /* Pods_CollabChatTests.framework */; };
+		978C2CCF58730EABC2E90FF2 /* Pods_CollabChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5849F8B532761F2643837534 /* Pods_CollabChat.framework */; };
+		E7526AD3CF040108BCCF980C /* Pods_CollabChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76341AA9840D4BEC539678A9 /* Pods_CollabChatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,16 @@
 		1F41C2A61E0C7F000052B9B6 /* CollabChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollabChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F41C2AA1E0C7F000052B9B6 /* CollabChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabChatUITests.swift; sourceTree = "<group>"; };
 		1F41C2AC1E0C7F000052B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2DD64C3903807F3915EE2702 /* Pods-CollabChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChat/Pods-CollabChat.debug.xcconfig"; sourceTree = "<group>"; };
+		5849F8B532761F2643837534 /* Pods_CollabChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollabChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76341AA9840D4BEC539678A9 /* Pods_CollabChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollabChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BBDAB98FB6603F13D240A5 /* Pods-CollabChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChat/Pods-CollabChat.release.xcconfig"; sourceTree = "<group>"; };
+		B7C6D81F824C9BCC468FE1BB /* Pods-CollabChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChatTests/Pods-CollabChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA71080BBF24A9AC0ECA42BE /* Pods-CollabChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChatUITests/Pods-CollabChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D8DFD77DF58DE99418D2F8F2 /* Pods_CollabChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollabChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D995E9AD849531A9A636DB5D /* Pods-CollabChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChatTests/Pods-CollabChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD6AFEA1E6D89426E736F032 /* Pods-CollabChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChatUITests/Pods-CollabChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978C2CCF58730EABC2E90FF2 /* Pods_CollabChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C24F8C4C628D3C9151015A6 /* Pods_CollabChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7526AD3CF040108BCCF980C /* Pods_CollabChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				1F41C29E1E0C7F000052B9B6 /* CollabChatTests */,
 				1F41C2A91E0C7F000052B9B6 /* CollabChatUITests */,
 				1F41C2881E0C7F000052B9B6 /* Products */,
+				29A61B08B1800A5860B814D4 /* Pods */,
+				B824FEABB38833730D08F50B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +120,7 @@
 			children = (
 				1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */,
 				1F41C28C1E0C7F000052B9B6 /* ViewController.swift */,
-				1F41C28E1E0C7F000052B9B6 /* Main.storyboard */,
-				1F41C2911E0C7F000052B9B6 /* Assets.xcassets */,
-				1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */,
-				1F41C2961E0C7F000052B9B6 /* Info.plist */,
+				1F41C2B81E0C86640052B9B6 /* Resources */,
 			);
 			path = CollabChat;
 			sourceTree = "<group>";
@@ -125,6 +143,49 @@
 			path = CollabChatUITests;
 			sourceTree = "<group>";
 		};
+		1F41C2B81E0C86640052B9B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C2911E0C7F000052B9B6 /* Assets.xcassets */,
+				1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */,
+				1F41C2961E0C7F000052B9B6 /* Info.plist */,
+				1F41C2B91E0C866B0052B9B6 /* Storyboards */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1F41C2B91E0C866B0052B9B6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */,
+				1F41C28E1E0C7F000052B9B6 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		29A61B08B1800A5860B814D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DD64C3903807F3915EE2702 /* Pods-CollabChat.debug.xcconfig */,
+				89BBDAB98FB6603F13D240A5 /* Pods-CollabChat.release.xcconfig */,
+				B7C6D81F824C9BCC468FE1BB /* Pods-CollabChatTests.debug.xcconfig */,
+				D995E9AD849531A9A636DB5D /* Pods-CollabChatTests.release.xcconfig */,
+				FD6AFEA1E6D89426E736F032 /* Pods-CollabChatUITests.debug.xcconfig */,
+				CA71080BBF24A9AC0ECA42BE /* Pods-CollabChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B824FEABB38833730D08F50B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5849F8B532761F2643837534 /* Pods_CollabChat.framework */,
+				D8DFD77DF58DE99418D2F8F2 /* Pods_CollabChatTests.framework */,
+				76341AA9840D4BEC539678A9 /* Pods_CollabChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F41C2AF1E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChat" */;
 			buildPhases = (
+				E1E8308FBC6614709F260226 /* [CP] Check Pods Manifest.lock */,
 				1F41C2831E0C7F000052B9B6 /* Sources */,
 				1F41C2841E0C7F000052B9B6 /* Frameworks */,
 				1F41C2851E0C7F000052B9B6 /* Resources */,
+				5661FD646CDD0FE121632244 /* [CP] Embed Pods Frameworks */,
+				9A081DEF5932C743010F2AD3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F41C2B21E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatTests" */;
 			buildPhases = (
+				487D9A23DBA4223304F24DA1 /* [CP] Check Pods Manifest.lock */,
 				1F41C2971E0C7F000052B9B6 /* Sources */,
 				1F41C2981E0C7F000052B9B6 /* Frameworks */,
 				1F41C2991E0C7F000052B9B6 /* Resources */,
+				117A437E346AEE52414E444C /* [CP] Embed Pods Frameworks */,
+				DA8E2055DF038BBC18B6C32E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F41C2B51E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatUITests" */;
 			buildPhases = (
+				77C7BB6BF3D79D962822D894 /* [CP] Check Pods Manifest.lock */,
 				1F41C2A21E0C7F000052B9B6 /* Sources */,
 				1F41C2A31E0C7F000052B9B6 /* Frameworks */,
 				1F41C2A41E0C7F000052B9B6 /* Resources */,
+				032D5D256E17DB8FF0FA21F4 /* [CP] Embed Pods Frameworks */,
+				DABD2EAB1249511F54706569 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F41C2951E0C7F000052B9B6 /* LaunchScreen.storyboard in Resources */,
+				1F41C2BB1E0C86750052B9B6 /* GoogleService-Info.plist in Resources */,
 				1F41C2921E0C7F000052B9B6 /* Assets.xcassets in Resources */,
 				1F41C2901E0C7F000052B9B6 /* Main.storyboard in Resources */,
 			);
@@ -245,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F41C2BC1E0C88990052B9B6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +324,149 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F41C2BD1E0C889A0052B9B6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032D5D256E17DB8FF0FA21F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollabChatUITests/Pods-CollabChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		117A437E346AEE52414E444C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollabChatTests/Pods-CollabChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		487D9A23DBA4223304F24DA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5661FD646CDD0FE121632244 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollabChat/Pods-CollabChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77C7BB6BF3D79D962822D894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A081DEF5932C743010F2AD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollabChat/Pods-CollabChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8E2055DF038BBC18B6C32E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollabChatTests/Pods-CollabChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DABD2EAB1249511F54706569 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CollabChatUITests/Pods-CollabChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E8308FBC6614709F260226 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F41C2831E0C7F000052B9B6 /* Sources */ = {
@@ -413,6 +624,7 @@
 		};
 		1F41C2B01E0C7F000052B9B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD64C3903807F3915EE2702 /* Pods-CollabChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A6ASF988U5;
@@ -426,6 +638,7 @@
 		};
 		1F41C2B11E0C7F000052B9B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89BBDAB98FB6603F13D240A5 /* Pods-CollabChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A6ASF988U5;
@@ -439,6 +652,7 @@
 		};
 		1F41C2B31E0C7F000052B9B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C6D81F824C9BCC468FE1BB /* Pods-CollabChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +668,7 @@
 		};
 		1F41C2B41E0C7F000052B9B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D995E9AD849531A9A636DB5D /* Pods-CollabChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +684,7 @@
 		};
 		1F41C2B61E0C7F000052B9B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6AFEA1E6D89426E736F032 /* Pods-CollabChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = A6ASF988U5;
@@ -483,6 +699,7 @@
 		};
 		1F41C2B71E0C7F000052B9B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA71080BBF24A9AC0ECA42BE /* Pods-CollabChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = A6ASF988U5;
@@ -514,6 +731,7 @@
 				1F41C2B11E0C7F000052B9B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F41C2B21E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +740,7 @@
 				1F41C2B41E0C7F000052B9B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F41C2B51E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +749,7 @@
 				1F41C2B71E0C7F000052B9B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
