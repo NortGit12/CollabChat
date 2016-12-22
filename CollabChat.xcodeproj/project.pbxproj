@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F41C28B1E0C7F000052B9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */; };
+		1F41C28D1E0C7F000052B9B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C28C1E0C7F000052B9B6 /* ViewController.swift */; };
+		1F41C2901E0C7F000052B9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C28E1E0C7F000052B9B6 /* Main.storyboard */; };
+		1F41C2921E0C7F000052B9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2911E0C7F000052B9B6 /* Assets.xcassets */; };
+		1F41C2951E0C7F000052B9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */; };
+		1F41C2A01E0C7F000052B9B6 /* CollabChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C29F1E0C7F000052B9B6 /* CollabChatTests.swift */; };
+		1F41C2AB1E0C7F000052B9B6 /* CollabChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C2AA1E0C7F000052B9B6 /* CollabChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F41C29C1E0C7F000052B9B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F41C27F1E0C7F000052B9B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F41C2861E0C7F000052B9B6;
+			remoteInfo = CollabChat;
+		};
+		1F41C2A71E0C7F000052B9B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F41C27F1E0C7F000052B9B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F41C2861E0C7F000052B9B6;
+			remoteInfo = CollabChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F41C2871E0C7F000052B9B6 /* CollabChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollabChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F41C28C1E0C7F000052B9B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F41C28F1E0C7F000052B9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F41C2911E0C7F000052B9B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F41C2941E0C7F000052B9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F41C2961E0C7F000052B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F41C29B1E0C7F000052B9B6 /* CollabChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollabChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F41C29F1E0C7F000052B9B6 /* CollabChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabChatTests.swift; sourceTree = "<group>"; };
+		1F41C2A11E0C7F000052B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F41C2A61E0C7F000052B9B6 /* CollabChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollabChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F41C2AA1E0C7F000052B9B6 /* CollabChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollabChatUITests.swift; sourceTree = "<group>"; };
+		1F41C2AC1E0C7F000052B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F41C2841E0C7F000052B9B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41C2981E0C7F000052B9B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41C2A31E0C7F000052B9B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F41C27E1E0C7F000052B9B6 = {
+			isa = PBXGroup;
+			children = (
+				1F41C2891E0C7F000052B9B6 /* CollabChat */,
+				1F41C29E1E0C7F000052B9B6 /* CollabChatTests */,
+				1F41C2A91E0C7F000052B9B6 /* CollabChatUITests */,
+				1F41C2881E0C7F000052B9B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F41C2881E0C7F000052B9B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C2871E0C7F000052B9B6 /* CollabChat.app */,
+				1F41C29B1E0C7F000052B9B6 /* CollabChatTests.xctest */,
+				1F41C2A61E0C7F000052B9B6 /* CollabChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F41C2891E0C7F000052B9B6 /* CollabChat */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */,
+				1F41C28C1E0C7F000052B9B6 /* ViewController.swift */,
+				1F41C28E1E0C7F000052B9B6 /* Main.storyboard */,
+				1F41C2911E0C7F000052B9B6 /* Assets.xcassets */,
+				1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */,
+				1F41C2961E0C7F000052B9B6 /* Info.plist */,
+			);
+			path = CollabChat;
+			sourceTree = "<group>";
+		};
+		1F41C29E1E0C7F000052B9B6 /* CollabChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C29F1E0C7F000052B9B6 /* CollabChatTests.swift */,
+				1F41C2A11E0C7F000052B9B6 /* Info.plist */,
+			);
+			path = CollabChatTests;
+			sourceTree = "<group>";
+		};
+		1F41C2A91E0C7F000052B9B6 /* CollabChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F41C2AA1E0C7F000052B9B6 /* CollabChatUITests.swift */,
+				1F41C2AC1E0C7F000052B9B6 /* Info.plist */,
+			);
+			path = CollabChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F41C2861E0C7F000052B9B6 /* CollabChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F41C2AF1E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChat" */;
+			buildPhases = (
+				1F41C2831E0C7F000052B9B6 /* Sources */,
+				1F41C2841E0C7F000052B9B6 /* Frameworks */,
+				1F41C2851E0C7F000052B9B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollabChat;
+			productName = CollabChat;
+			productReference = 1F41C2871E0C7F000052B9B6 /* CollabChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F41C29A1E0C7F000052B9B6 /* CollabChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F41C2B21E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatTests" */;
+			buildPhases = (
+				1F41C2971E0C7F000052B9B6 /* Sources */,
+				1F41C2981E0C7F000052B9B6 /* Frameworks */,
+				1F41C2991E0C7F000052B9B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F41C29D1E0C7F000052B9B6 /* PBXTargetDependency */,
+			);
+			name = CollabChatTests;
+			productName = CollabChatTests;
+			productReference = 1F41C29B1E0C7F000052B9B6 /* CollabChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F41C2A51E0C7F000052B9B6 /* CollabChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F41C2B51E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatUITests" */;
+			buildPhases = (
+				1F41C2A21E0C7F000052B9B6 /* Sources */,
+				1F41C2A31E0C7F000052B9B6 /* Frameworks */,
+				1F41C2A41E0C7F000052B9B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F41C2A81E0C7F000052B9B6 /* PBXTargetDependency */,
+			);
+			name = CollabChatUITests;
+			productName = CollabChatUITests;
+			productReference = 1F41C2A61E0C7F000052B9B6 /* CollabChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F41C27F1E0C7F000052B9B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JeffCryst;
+				TargetAttributes = {
+					1F41C2861E0C7F000052B9B6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A6ASF988U5;
+						ProvisioningStyle = Automatic;
+					};
+					1F41C29A1E0C7F000052B9B6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A6ASF988U5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F41C2861E0C7F000052B9B6;
+					};
+					1F41C2A51E0C7F000052B9B6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A6ASF988U5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F41C2861E0C7F000052B9B6;
+					};
+				};
+			};
+			buildConfigurationList = 1F41C2821E0C7F000052B9B6 /* Build configuration list for PBXProject "CollabChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F41C27E1E0C7F000052B9B6;
+			productRefGroup = 1F41C2881E0C7F000052B9B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F41C2861E0C7F000052B9B6 /* CollabChat */,
+				1F41C29A1E0C7F000052B9B6 /* CollabChatTests */,
+				1F41C2A51E0C7F000052B9B6 /* CollabChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F41C2851E0C7F000052B9B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41C2951E0C7F000052B9B6 /* LaunchScreen.storyboard in Resources */,
+				1F41C2921E0C7F000052B9B6 /* Assets.xcassets in Resources */,
+				1F41C2901E0C7F000052B9B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41C2991E0C7F000052B9B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41C2A41E0C7F000052B9B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F41C2831E0C7F000052B9B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41C28D1E0C7F000052B9B6 /* ViewController.swift in Sources */,
+				1F41C28B1E0C7F000052B9B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41C2971E0C7F000052B9B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41C2A01E0C7F000052B9B6 /* CollabChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F41C2A21E0C7F000052B9B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F41C2AB1E0C7F000052B9B6 /* CollabChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F41C29D1E0C7F000052B9B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F41C2861E0C7F000052B9B6 /* CollabChat */;
+			targetProxy = 1F41C29C1E0C7F000052B9B6 /* PBXContainerItemProxy */;
+		};
+		1F41C2A81E0C7F000052B9B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F41C2861E0C7F000052B9B6 /* CollabChat */;
+			targetProxy = 1F41C2A71E0C7F000052B9B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F41C28E1E0C7F000052B9B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F41C28F1E0C7F000052B9B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F41C2941E0C7F000052B9B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F41C2AD1E0C7F000052B9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F41C2AE1E0C7F000052B9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F41C2B01E0C7F000052B9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A6ASF988U5;
+				INFOPLIST_FILE = CollabChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffcryst.CollabChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1F41C2B11E0C7F000052B9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A6ASF988U5;
+				INFOPLIST_FILE = CollabChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffcryst.CollabChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1F41C2B31E0C7F000052B9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A6ASF988U5;
+				INFOPLIST_FILE = CollabChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffcryst.CollabChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollabChat.app/CollabChat";
+			};
+			name = Debug;
+		};
+		1F41C2B41E0C7F000052B9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A6ASF988U5;
+				INFOPLIST_FILE = CollabChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffcryst.CollabChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollabChat.app/CollabChat";
+			};
+			name = Release;
+		};
+		1F41C2B61E0C7F000052B9B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = A6ASF988U5;
+				INFOPLIST_FILE = CollabChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffcryst.CollabChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CollabChat;
+			};
+			name = Debug;
+		};
+		1F41C2B71E0C7F000052B9B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = A6ASF988U5;
+				INFOPLIST_FILE = CollabChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffcryst.CollabChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CollabChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F41C2821E0C7F000052B9B6 /* Build configuration list for PBXProject "CollabChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41C2AD1E0C7F000052B9B6 /* Debug */,
+				1F41C2AE1E0C7F000052B9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F41C2AF1E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41C2B01E0C7F000052B9B6 /* Debug */,
+				1F41C2B11E0C7F000052B9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F41C2B21E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41C2B31E0C7F000052B9B6 /* Debug */,
+				1F41C2B41E0C7F000052B9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F41C2B51E0C7F000052B9B6 /* Build configuration list for PBXNativeTarget "CollabChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F41C2B61E0C7F000052B9B6 /* Debug */,
+				1F41C2B71E0C7F000052B9B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F41C27F1E0C7F000052B9B6 /* Project object */;
+}
