@@ -22,12 +22,10 @@ class SignInViewController: UIViewController {
     // MARK: - Methods
     //==================================================
     
-    func setupViewElements() {
+    private func setupViewElements() {
         
         emailTextField.layer.cornerRadius = 20
-        
         passwordTextField.layer.cornerRadius = 20
-        
         signInButton.layer.cornerRadius = 20
     }
     
@@ -40,11 +38,6 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
 
         setupViewElements()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
