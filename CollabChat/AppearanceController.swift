@@ -76,7 +76,7 @@ struct ThemeManager {
         }
     }
     
-    static func setBackgroundColor(forView view: UIView) {
+    static func applyTheme(toView view: UIView) {
         view.backgroundColor = ThemeManager.getTheme()?.backgroundColor
     }
 }

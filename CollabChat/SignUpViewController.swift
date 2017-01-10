@@ -55,7 +55,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         setupViewElements()
-        ThemeManager.setBackgroundColor(forView: self.view)
+        ThemeManager.applyTheme(toView: self.view)
     }
     
 
