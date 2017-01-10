@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Conversation Main View Controller-->
+        <!--Conversations-->
         <scene sceneID="8vt-RV-JhQ">
             <objects>
                 <viewController id="F4y-ki-aRb" customClass="ConversationMainViewController" customModule="CollabChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ghY-Fy-zxa"/>
+                    <navigationItem key="navigationItem" title="Conversations" id="ghY-Fy-zxa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybW-sx-I7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3076" y="1055.6221889055473"/>
         </scene>
-        <!--Users Main View Controller-->
+        <!--Users-->
         <scene sceneID="b3D-n2-1Zc">
             <objects>
                 <viewController id="dzp-Ln-3eq" customClass="UsersMainViewController" customModule="CollabChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,13 +41,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CnF-4v-mSh"/>
+                    <navigationItem key="navigationItem" title="Users" id="CnF-4v-mSh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="buz-tV-SpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3076" y="1739.2803598200901"/>
         </scene>
-        <!--Settings Main View Controller-->
+        <!--Settings-->
         <scene sceneID="RLu-W8-bCy">
             <objects>
                 <viewController id="d5Z-Jb-bi4" customClass="SettingsMainViewController" customModule="CollabChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eoh-lT-1HL"/>
+                    <navigationItem key="navigationItem" title="Settings" id="eoh-lT-1HL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNs-tu-TWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

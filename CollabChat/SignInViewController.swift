@@ -19,6 +19,14 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     
     //==================================================
+    // MARK: - Actions
+    //==================================================
+    
+    @IBAction func signInButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "SignInToTabBarController", sender: nil)
+    }
+    
+    //==================================================
     // MARK: - Methods
     //==================================================
     

@@ -31,6 +31,10 @@ class SignUpViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "SignUpToTabBarController", sender: nil)
+    }
+    
     //==================================================
     // MARK: - Methods
     //==================================================

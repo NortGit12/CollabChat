@@ -35,6 +35,18 @@ enum Theme: Int {
         }
     }
     
+    /* Consumers
+     *UINavigation appearance's bar style
+     */
+    var barStyle: UIBarStyle {
+        switch self {
+        case .dark:
+            return .black
+        case .light:
+            return .default
+        }
+    }
+    
     var tintColor: UIColor {
         switch self {
         case .dark, .light:
@@ -60,7 +72,11 @@ struct ThemeManager {
         UserDefaults.standard.set(theme.rawValue, forKey: selectedThemeKey)
         UserDefaults.standard.synchronize()
         
+        // Change the tint color
         UIApplication.shared.delegate?.window??.tintColor = theme.tintColor
+        
+        // Set the navigation bar's bar style
+        UINavigationBar.appearance().barStyle = theme.barStyle
     }
     
     static func getTheme() -> Theme? {
@@ -80,48 +96,3 @@ struct ThemeManager {
         view.backgroundColor = ThemeManager.getTheme()?.backgroundColor
     }
 }
-
-//class AppearanceController {
-//    
-//    //==================================================
-//    // MARK: - _Properties
-//    //==================================================
-//    
-//    static let basicTextFontSize = 24
-//    static let fontName = "SF UI Text"
-//    static let smallerTextFontSize = 20
-//    
-//    static let orange = UIColor(red: 255/255.0, green: 153/255.0, blue: 51/255.0, alpha: 1.0)
-//    
-//    //==================================================
-//    // MARK: - Methods
-//    //==================================================
-//    
-//    static func setDarkTheme() {
-//        
-//        // UINavigationBar
-//        
-//        let titleTextAttributes = [
-//            NSForegroundColorAttributeName: UIColor.white
-//            , NSFontAttributeName: UIFont(name: AppearanceController.fontName, size: CGFloat(AppearanceController.basicTextFontSize))!
-//        ]
-//        
-//        UINavigationBar.appearance().barTintColor = .black
-//        UINavigationBar.appearance().titleTextAttributes = titleTextAttributes
-//        UINavigationBar.appearance().tintColor = AppearanceController.orange
-//    }
-//    
-//    static func setLightTheme() {
-//        
-//        // UINavigationBar
-//        
-//        let titleTextAttributes = [
-//            NSForegroundColorAttributeName: UIColor.white
-//            , NSFontAttributeName: UIFont(name: AppearanceController.fontName, size: CGFloat(AppearanceController.basicTextFontSize))!
-//        ]
-//        
-//        UINavigationBar.appearance().barTintColor = .red
-//        UINavigationBar.appearance().titleTextAttributes = titleTextAttributes
-//        UINavigationBar.appearance().tintColor = AppearanceController.orange
-//    }
-//}
