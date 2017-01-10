@@ -77,6 +77,9 @@ struct ThemeManager {
         
         // Set the navigation bar's bar style
         UINavigationBar.appearance().barStyle = theme.barStyle
+        
+        let titleDictionary: [String: Any] = [NSForegroundColorAttributeName: theme.tintColor]
+        UINavigationBar.appearance().titleTextAttributes = titleDictionary
     }
     
     static func getTheme() -> Theme? {
