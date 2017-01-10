@@ -24,6 +24,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     
     //==================================================
+    // MARK: - Actions
+    //==================================================
+    
+    @IBAction func alreadyHaveAccountButtonTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    //==================================================
     // MARK: - Methods
     //==================================================
     
@@ -47,6 +55,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         setupViewElements()
+        ThemeManager.setBackgroundColor(forView: self.view)
     }
     
 
