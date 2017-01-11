@@ -72,14 +72,20 @@ struct ThemeManager {
         UserDefaults.standard.set(theme.rawValue, forKey: selectedThemeKey)
         UserDefaults.standard.synchronize()
         
-        // Change the tint color
+        // Configure the tint color
         UIApplication.shared.delegate?.window??.tintColor = theme.tintColor
         
-        // Set the navigation bar's bar style
+        // Configure the navigation bar's bar style
         UINavigationBar.appearance().barStyle = theme.barStyle
         
         let titleDictionary: [String: Any] = [NSForegroundColorAttributeName: theme.tintColor]
         UINavigationBar.appearance().titleTextAttributes = titleDictionary
+        
+        // Configure the Tab Bar
+        if let tabBarController = tabBarController {
+            print("\ntheme.barStyle = \(theme.barStyle)\n")
+            tabBarController.tabBar.barStyle = theme.barStyle
+        }
     }
     
     static func getTheme() -> Theme? {
@@ -96,6 +102,64 @@ struct ThemeManager {
     }
     
     static func applyTheme(toView view: UIView) {
-        view.backgroundColor = ThemeManager.getTheme()?.backgroundColor
+        
+        if let theme = ThemeManager.getTheme() {
+            // Configure the view's background color
+            view.backgroundColor = theme.backgroundColor
+            
+            if let tabBarController = ThemeManager.tabBarController {
+                // Configure the Tab Bar's bar style
+                tabBarController.tabBar.barStyle = theme.barStyle
+                
+                // Configure the Tab Bar icons
+                guard let conversationsTabBarItem = tabBarController.tabBar.items?[0]
+                    , let usersTabBarItem = tabBarController.tabBar.items?[1]
+                    , let settingsTabBarItem = tabBarController.tabBar.items?[2] else {
+                        NSLog("Error accessing all tab bar items.")
+                        return
+                }
+                
+                switch theme {
+                case .dark:
+                    // Customize the Tab Bar Item images
+                    conversationsTabBarItem.selectedImage = UIImage(named: "tab-icon_convs_selected_41w")//?.renderingMode(.alwaysOriginal)
+                    conversationsTabBarItem.image = UIImage(named: "tab-icon_convs_unselected_41w")//?.renderingMode(.alwaysOriginal)
+                    usersTabBarItem.selectedImage = UIImage(named: "tab-icon_users_selected-black_31w")//?.renderingMode(.alwaysOriginal)
+                    usersTabBarItem.image = UIImage(named: "tab-icon_users_unselected-black_31w")//?.renderingMode(.alwaysOriginal)
+                    settingsTabBarItem.selectedImage = UIImage(named: "tab-icon_settings_selected-black_35w")//?.renderingMode(.alwaysOriginal)
+                    settingsTabBarItem.image = UIImage(named: "tab-icon_settings_unselected_35w")//?.renderingMode(.alwaysOriginal)
+                case .light:
+                    // Customize the Tab Bar Item images
+                    conversationsTabBarItem.selectedImage = UIImage(named: "tab-icon_convs_selected_41w")//?.renderingMode(.alwaysOriginal)
+                    conversationsTabBarItem.image = UIImage(named: "tab-icon_convs_unselected_41w")//?.renderingMode(.alwaysOriginal)
+                    usersTabBarItem.selectedImage = UIImage(named: "tab-icon_users_selected-white_31w")//?.renderingMode(.alwaysOriginal)
+                    usersTabBarItem.image = UIImage(named: "tab-icon_users_unselected-white_31w")//?.renderingMode(.alwaysOriginal)
+                    settingsTabBarItem.selectedImage = UIImage(named: "tab-icon_settings_selected-white_35w")//?.renderingMode(.alwaysOriginal)
+                    settingsTabBarItem.image = UIImage(named: "tab-icon_settings_unselected_35w")//?.renderingMode(.alwaysOriginal)
+                }
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

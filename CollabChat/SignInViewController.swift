@@ -49,15 +49,41 @@ class SignInViewController: UIViewController {
         ThemeManager.applyTheme(toView: self.view)
     }
     
-
-    /*
+    //==================================================
     // MARK: - Navigation
+    //================================================== 
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+//        if segue.identifier == "SignInToTabBarController" {
+//            if let tabBarController = segue.destination as? UITabBarController
+//                , let navCont = tabBarController.viewControllers?.first
+//                , let conversationMainViewController = {
+//                
+//                
+//                ThemeManager.tabBarController = conversationMainViewController.tabBarController
+//                ThemeManager.applyTheme(toView: conversationMainViewController.view)
+//            }
+//        }
     }
-    */
-
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

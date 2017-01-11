@@ -69,9 +69,9 @@
         <!--Navigation Controller-->
         <scene sceneID="FMB-jK-vpJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="32t-Uh-d8L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" selectedImage="tab-icon_conversations_selected" id="TeH-jp-8hb">
-                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                <navigationController storyboardIdentifier="ConversationsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="32t-Uh-d8L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab-icon_convs_unselected_41w" selectedImage="tab-icon_convs_selected_41w" id="TeH-jp-8hb">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="p6A-I1-1DT">
@@ -91,8 +91,8 @@
         <scene sceneID="o2e-yB-1Uh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="em7-ki-KsO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" selectedImage="tab-icon_users_unselected-black" id="kH6-X0-JVF">
-                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab-icon_users_unselected-black_31w" selectedImage="tab-icon_users_selected-black_31w" id="kH6-X0-JVF">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mpA-1H-ua4">
@@ -112,8 +112,8 @@
         <scene sceneID="ibS-lj-JWJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qqY-MX-nNA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" selectedImage="tab-icon_settings_unselected" id="mhB-eo-3AI">
-                        <inset key="imageInsets" minX="0.0" minY="9" maxX="0.0" maxY="-9"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab-icon_settings_unselected_35w" selectedImage="tab-icon_settings_selected-black_35w" id="mhB-eo-3AI">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KMC-dk-xSB">
@@ -151,8 +151,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tab-icon_conversations_selected" width="41" height="34"/>
-        <image name="tab-icon_settings_unselected" width="37" height="38"/>
-        <image name="tab-icon_users_unselected-black" width="32" height="36"/>
+        <image name="tab-icon_convs_selected_41w" width="41" height="34"/>
+        <image name="tab-icon_convs_unselected_41w" width="43" height="35"/>
+        <image name="tab-icon_settings_selected-black_35w" width="35" height="35"/>
+        <image name="tab-icon_settings_unselected_35w" width="37" height="37"/>
+        <image name="tab-icon_users_selected-black_31w" width="32" height="36"/>
+        <image name="tab-icon_users_unselected-black_31w" width="33" height="36"/>
     </resources>
 </document>

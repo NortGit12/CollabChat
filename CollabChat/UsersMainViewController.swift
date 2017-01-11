@@ -14,9 +14,10 @@ class UsersMainViewController: UIViewController {
     // MARK: - View Lifecycle
     //==================================================
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         ThemeManager.applyTheme(toView: self.view)
     }
+
 }
