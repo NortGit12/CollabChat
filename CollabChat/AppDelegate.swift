@@ -27,8 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSLog("Error identifying the stored theme.")
             return false
         }
-//        ThemeManager.setTheme(storedTheme)
-        ThemeManager.setTheme(Theme(rawValue: 1)!)  // 0 = dark, 1 = light
+        
+        let launchScreen = UIStoryboard(name: "LaunchScreen", bundle: nil)
+        if let launchScreenViewController = launchScreen.instantiateViewController(withIdentifier: "LaunchScreenViewController") as? LaunchScreenViewController {
+            launchScreenViewController.view.backgroundColor = storedTheme.backgroundColor
+        }
+        
+        ThemeManager.setTheme(storedTheme)
+//        ThemeManager.setTheme(Theme(rawValue: 1)!)  // 0 = dark, 1 = light
         
         return true
     }

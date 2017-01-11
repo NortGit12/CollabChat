@@ -83,7 +83,6 @@ struct ThemeManager {
         
         // Configure the Tab Bar
         if let tabBarController = tabBarController {
-            print("\ntheme.barStyle = \(theme.barStyle)\n")
             tabBarController.tabBar.barStyle = theme.barStyle
         }
     }

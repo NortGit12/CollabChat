@@ -216,9 +216,7 @@
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="IiN-Bw-Nmq"/>
-                                    <constraint firstAttribute="width" constant="150" id="cLg-yj-md4"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="pOz-Oi-2dl"/>
-                                    <constraint firstAttribute="height" constant="42" id="yxz-xS-QQ3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                 <state key="normal" title="Sign Up">
