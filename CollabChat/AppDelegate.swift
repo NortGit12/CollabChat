@@ -34,7 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         ThemeManager.setTheme(storedTheme)
-//        ThemeManager.setTheme(Theme(rawValue: 1)!)  // 0 = dark, 1 = light
         
         return true
     }

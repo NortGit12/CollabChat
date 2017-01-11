@@ -6,6 +6,7 @@
 //  Copyright © 2016 JeffCryst. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 class SignInViewController: UIViewController {
@@ -23,7 +24,15 @@ class SignInViewController: UIViewController {
     //==================================================
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "SignInToTabBarController", sender: nil)
+        guard let email = emailTextField.text, email.characters.count > 0
+            , let password = passwordTextField.text, password.characters.count > 0 else {
+                NSLog("Error: Missing email and/or password when attempting to sign in.")
+                return
+        }
+        
+        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+            self.performSegue(withIdentifier: "SignInToTabBarController", sender: nil)
+        })
     }
     
     //==================================================

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingsMainViewController: UIViewController {
     
@@ -30,6 +31,18 @@ class SettingsMainViewController: UIViewController {
     //==================================================
     // MARK: - Actions
     //==================================================
+    
+    @IBAction func signOutButtonTapped(_ sender: UIButton) {
+        do {
+            try FIRAuth.auth()?.signOut()
+            
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let signInViewController = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController")
+            present(signInViewController, animated: true, completion: nil)
+        } catch let error as NSError {
+            NSLog(error.localizedDescription)
+        }
+    }
     
     @IBAction func themeButtonTapped(_ sender: UIButton) {
         print("\nsender.tag = \(sender.tag)")

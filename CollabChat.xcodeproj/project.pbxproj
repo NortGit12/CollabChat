@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1F2F1E0F1E0DD19100034192 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F1E0E1E0DD19100034192 /* AppearanceController.swift */; };
-		1F301AFE1E258F910022496E /* TabBarHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F301AFC1E258F910022496E /* TabBarHome.storyboard */; };
 		1F301B001E2593980022496E /* ConversationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F301AFF1E2593980022496E /* ConversationMainViewController.swift */; };
 		1F301B021E2593AC0022496E /* UsersMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F301B011E2593AC0022496E /* UsersMainViewController.swift */; };
 		1F301B041E2593B80022496E /* SettingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F301B031E2593B80022496E /* SettingsMainViewController.swift */; };
 		1F3579291E26DAAA0036D8FB /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3579281E26DAAA0036D8FB /* LaunchScreenViewController.swift */; };
+		1F35792D1E26E15F0036D8FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35792C1E26E15F0036D8FB /* User.swift */; };
+		1F3579321E26F65B0036D8FB /* TabBarMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3579301E26F65B0036D8FB /* TabBarMain.storyboard */; };
 		1F41C28B1E0C7F000052B9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */; };
 		1F41C2901E0C7F000052B9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C28E1E0C7F000052B9B6 /* Main.storyboard */; };
 		1F41C2921E0C7F000052B9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2911E0C7F000052B9B6 /* Assets.xcassets */; };
@@ -48,11 +49,13 @@
 
 /* Begin PBXFileReference section */
 		1F2F1E0E1E0DD19100034192 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
-		1F301AFD1E258F910022496E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarHome.storyboard; sourceTree = "<group>"; };
 		1F301AFF1E2593980022496E /* ConversationMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationMainViewController.swift; sourceTree = "<group>"; };
 		1F301B011E2593AC0022496E /* UsersMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersMainViewController.swift; sourceTree = "<group>"; };
 		1F301B031E2593B80022496E /* SettingsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMainViewController.swift; sourceTree = "<group>"; };
 		1F3579281E26DAAA0036D8FB /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		1F35792B1E26DCFF0036D8FB /* CollabChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CollabChat.entitlements; sourceTree = "<group>"; };
+		1F35792C1E26E15F0036D8FB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1F3579311E26F65B0036D8FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarMain.storyboard; sourceTree = "<group>"; };
 		1F41C2871E0C7F000052B9B6 /* CollabChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollabChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F41C28F1E0C7F000052B9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -153,7 +156,9 @@
 		1F41C2891E0C7F000052B9B6 /* CollabChat */ = {
 			isa = PBXGroup;
 			children = (
+				1F35792B1E26DCFF0036D8FB /* CollabChat.entitlements */,
 				1F41C28A1E0C7F000052B9B6 /* AppDelegate.swift */,
+				1F35792C1E26E15F0036D8FB /* User.swift */,
 				1F2F1E101E0DD19500034192 /* OtherControllers */,
 				1F41C2B81E0C86640052B9B6 /* Resources */,
 				1F2F1E0D1E0DD17D00034192 /* ViewControllers */,
@@ -195,7 +200,7 @@
 			children = (
 				1F41C2931E0C7F000052B9B6 /* LaunchScreen.storyboard */,
 				1F41C28E1E0C7F000052B9B6 /* Main.storyboard */,
-				1F301AFC1E258F910022496E /* TabBarHome.storyboard */,
+				1F3579301E26F65B0036D8FB /* TabBarMain.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -302,6 +307,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = A6ASF988U5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					1F41C29A1E0C7F000052B9B6 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -343,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F41C2951E0C7F000052B9B6 /* LaunchScreen.storyboard in Resources */,
-				1F301AFE1E258F910022496E /* TabBarHome.storyboard in Resources */,
+				1F3579321E26F65B0036D8FB /* TabBarMain.storyboard in Resources */,
 				1F41C2BB1E0C86750052B9B6 /* GoogleService-Info.plist in Resources */,
 				1F41C2921E0C7F000052B9B6 /* Assets.xcassets in Resources */,
 				1F41C2901E0C7F000052B9B6 /* Main.storyboard in Resources */,
@@ -516,6 +526,7 @@
 				1F3579291E26DAAA0036D8FB /* LaunchScreenViewController.swift in Sources */,
 				1F2F1E0F1E0DD19100034192 /* AppearanceController.swift in Sources */,
 				1F301B001E2593980022496E /* ConversationMainViewController.swift in Sources */,
+				1F35792D1E26E15F0036D8FB /* User.swift in Sources */,
 				1F41C2BF1E0C95300052B9B6 /* SignInViewController.swift in Sources */,
 				1F301B041E2593B80022496E /* SettingsMainViewController.swift in Sources */,
 				1F41C28B1E0C7F000052B9B6 /* AppDelegate.swift in Sources */,
@@ -554,12 +565,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1F301AFC1E258F910022496E /* TabBarHome.storyboard */ = {
+		1F3579301E26F65B0036D8FB /* TabBarMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F301AFD1E258F910022496E /* Base */,
+				1F3579311E26F65B0036D8FB /* Base */,
 			);
-			name = TabBarHome.storyboard;
+			name = TabBarMain.storyboard;
 			sourceTree = "<group>";
 		};
 		1F41C28E1E0C7F000052B9B6 /* Main.storyboard */ = {
@@ -679,6 +690,7 @@
 			baseConfigurationReference = 2DD64C3903807F3915EE2702 /* Pods-CollabChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CollabChat/CollabChat.entitlements;
 				DEVELOPMENT_TEAM = A6ASF988U5;
 				INFOPLIST_FILE = CollabChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -693,6 +705,7 @@
 			baseConfigurationReference = 89BBDAB98FB6603F13D240A5 /* Pods-CollabChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CollabChat/CollabChat.entitlements;
 				DEVELOPMENT_TEAM = A6ASF988U5;
 				INFOPLIST_FILE = CollabChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

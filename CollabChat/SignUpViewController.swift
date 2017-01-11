@@ -6,6 +6,7 @@
 //  Copyright © 2016 JeffCryst. All rights reserved.
 //
 
+import Firebase
 import UIKit
 
 class SignUpViewController: UIViewController {
@@ -32,12 +33,71 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "SignUpToTabBarController", sender: nil)
+        if let confirmPassword = confirmPasswordTextField.text
+            , let email = emailTextField.text
+            , let firstName = firstNameTextField.text
+            , let lastName = lastNameTextField.text
+            , let password = passwordTextField.text
+            , let username = usernameTextField.text {
+            
+            if confirmPassword.characters.count == 0
+                || email.characters.count == 0
+                || firstName.characters.count == 0
+                || lastName.characters.count == 0
+                || password.characters.count == 0
+                || username.characters.count == 0 {
+                
+                presentErrorAlertController(withTitle: "Missing Required Details", andMessage: "All fields must have a value.")
+            }
+            
+            if password != confirmPassword {
+                presentErrorAlertController(withTitle: "Passwords Must Match", andMessage: "Password and Confirm password do not match.  Try again.")
+            }
+            
+//            let newUser = User(email: <#T##String#>, firstName: <#T##String#>, lastName: <#T##String#>, password: <#T##String#>, username: <#T##String#>)
+            
+//            FIRAuth.auth()!.createUser(withEmail: email, password: password) { (user, error) in
+//                if error == nil {
+//                    let userProfileData = [
+//                        "email": email
+//                        , "firstName": firstName
+//                        , "lastName": lastName
+//                        , "username": username
+//                    ]
+//                    
+//                    if let user = user {
+//                        let usersRef = FIRDatabase.database().reference().child("users")
+//                        usersRef.child(user.uid).setValue(userProfileData)
+//                        
+//                        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+//                            self.performSegue(withIdentifier: "SignUpToTabBarController", sender: nil)
+//                        })
+//                    }
+//                }
+//            }
+            
+//            let tabBarHomeStoryboard = UIStoryboard(name: "TabBarHome", bundle: nil)
+//            if let conversationMainViewController = tabBarHomeStoryboard.instantiateViewController(withIdentifier: "ConversationMainViewController") as? ConversationMainViewController {
+//                performSegue(withIdentifier: "SignInToTabBarController", sender: self)
+//            }
+            
+            performSegue(withIdentifier: "SignUpToTabBarController", sender: self)
+            
+//            let conversationMainViewController = tabBarHomeStoryboard.instantiateViewController(withIdentifier: "ConversationMainViewController")
+//            self.show(conversationMainViewController, sender: self)
+        }
     }
     
     //==================================================
     // MARK: - Methods
     //==================================================
+    
+    private func presentErrorAlertController(withTitle title: String, andMessage message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
     
     private func setupViewElements() {
     
