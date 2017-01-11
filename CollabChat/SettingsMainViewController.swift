@@ -41,6 +41,10 @@ class SettingsMainViewController: UIViewController {
             present(signInViewController, animated: true, completion: nil)
         } catch let error as NSError {
             NSLog(error.localizedDescription)
+            ErrorController.presentErrorAlertController(withTitle: ""
+                , andMessage: error.localizedDescription
+                , inViewController: self)
+            return
         }
     }
     

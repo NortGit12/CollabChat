@@ -47,44 +47,51 @@ class SignUpViewController: UIViewController {
                 || password.characters.count == 0
                 || username.characters.count == 0 {
                 
-                presentErrorAlertController(withTitle: "Missing Required Details", andMessage: "All fields must have a value.")
+                ErrorController.presentErrorAlertController(withTitle: "Missing Required Details"
+                    , andMessage: "All fields must have a value."
+                    , inViewController: self)
             }
             
             if password != confirmPassword {
-                presentErrorAlertController(withTitle: "Passwords Must Match", andMessage: "Password and Confirm password do not match.  Try again.")
+                ErrorController.presentErrorAlertController(withTitle: "Passwords Must Match"
+                    , andMessage: "Password and Confirm password do not match.  Try again."
+                    , inViewController: self)
             }
             
-//            let newUser = User(email: <#T##String#>, firstName: <#T##String#>, lastName: <#T##String#>, password: <#T##String#>, username: <#T##String#>)
-            
-//            FIRAuth.auth()!.createUser(withEmail: email, password: password) { (user, error) in
-//                if error == nil {
-//                    let userProfileData = [
-//                        "email": email
-//                        , "firstName": firstName
-//                        , "lastName": lastName
-//                        , "username": username
-//                    ]
-//                    
-//                    if let user = user {
-//                        let usersRef = FIRDatabase.database().reference().child("users")
-//                        usersRef.child(user.uid).setValue(userProfileData)
-//                        
-//                        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
-//                            self.performSegue(withIdentifier: "SignUpToTabBarController", sender: nil)
-//                        })
-//                    }
-//                }
-//            }
-            
-//            let tabBarHomeStoryboard = UIStoryboard(name: "TabBarHome", bundle: nil)
-//            if let conversationMainViewController = tabBarHomeStoryboard.instantiateViewController(withIdentifier: "ConversationMainViewController") as? ConversationMainViewController {
-//                performSegue(withIdentifier: "SignInToTabBarController", sender: self)
-//            }
-            
-            performSegue(withIdentifier: "SignUpToTabBarController", sender: self)
-            
-//            let conversationMainViewController = tabBarHomeStoryboard.instantiateViewController(withIdentifier: "ConversationMainViewController")
-//            self.show(conversationMainViewController, sender: self)
+            FIRAuth.auth()!.createUser(withEmail: email, password: password) { (user, error) in
+                
+                if let error = error {
+                    NSLog(error.localizedDescription)
+                    ErrorController.presentErrorAlertController(withTitle: ""
+                        , andMessage: error.localizedDescription
+                        , inViewController: self)
+                    return
+                }
+                
+                let userProfileData = [
+                    "email": email
+                    , "firstName": firstName
+                    , "lastName": lastName
+                    , "username": username
+                ]
+                
+                if let user = user {
+                    let usersRef = FIRDatabase.database().reference().child("users")
+                    usersRef.child(user.uid).setValue(userProfileData)
+                    
+                    FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                        if let error = error {
+                            NSLog(error.localizedDescription)
+                            ErrorController.presentErrorAlertController(withTitle: ""
+                                , andMessage: error.localizedDescription
+                                , inViewController: self)
+                            return
+                        }
+                        
+                        self.performSegue(withIdentifier: "SignUpToTabBarController", sender: self)
+                    })
+                }
+            }
         }
     }
     
@@ -92,12 +99,12 @@ class SignUpViewController: UIViewController {
     // MARK: - Methods
     //==================================================
     
-    private func presentErrorAlertController(withTitle title: String, andMessage message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
-    }
+//    private func presentErrorAlertController(withTitle title: String, andMessage message: String) {
+//        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//        alertController.addAction(okAction)
+//        present(alertController, animated: true, completion: nil)
+//    }
     
     private func setupViewElements() {
     
