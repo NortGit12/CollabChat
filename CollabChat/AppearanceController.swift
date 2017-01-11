@@ -122,23 +122,34 @@ struct ThemeManager {
                 switch theme {
                 case .dark:
                     // Customize the Tab Bar Item images
-                    conversationsTabBarItem.selectedImage = UIImage(named: "tab-icon_convs_selected_41w")//?.renderingMode(.alwaysOriginal)
-                    conversationsTabBarItem.image = UIImage(named: "tab-icon_convs_unselected_41w")//?.renderingMode(.alwaysOriginal)
-                    usersTabBarItem.selectedImage = UIImage(named: "tab-icon_users_selected-black_31w")//?.renderingMode(.alwaysOriginal)
-                    usersTabBarItem.image = UIImage(named: "tab-icon_users_unselected-black_31w")//?.renderingMode(.alwaysOriginal)
-                    settingsTabBarItem.selectedImage = UIImage(named: "tab-icon_settings_selected-black_35w")//?.renderingMode(.alwaysOriginal)
-                    settingsTabBarItem.image = UIImage(named: "tab-icon_settings_unselected_35w")//?.renderingMode(.alwaysOriginal)
+                    assignImageToTabBarItem(conversationsTabBarItem
+                        , forSelectedImage: "tab-icon_convs_selected_41w"
+                        , andUnselectedImage: "tab-icon_convs_unselected_41w")
+                    assignImageToTabBarItem(usersTabBarItem
+                        , forSelectedImage: "tab-icon_users_selected-black_31w"
+                        , andUnselectedImage: "tab-icon_users_unselected-black_31w")
+                    assignImageToTabBarItem(settingsTabBarItem
+                        , forSelectedImage: "tab-icon_settings_selected-black_35w"
+                        , andUnselectedImage: "tab-icon_settings_unselected_35w")
                 case .light:
                     // Customize the Tab Bar Item images
-                    conversationsTabBarItem.selectedImage = UIImage(named: "tab-icon_convs_selected_41w")//?.renderingMode(.alwaysOriginal)
-                    conversationsTabBarItem.image = UIImage(named: "tab-icon_convs_unselected_41w")//?.renderingMode(.alwaysOriginal)
-                    usersTabBarItem.selectedImage = UIImage(named: "tab-icon_users_selected-white_31w")//?.renderingMode(.alwaysOriginal)
-                    usersTabBarItem.image = UIImage(named: "tab-icon_users_unselected-white_31w")//?.renderingMode(.alwaysOriginal)
-                    settingsTabBarItem.selectedImage = UIImage(named: "tab-icon_settings_selected-white_35w")//?.renderingMode(.alwaysOriginal)
-                    settingsTabBarItem.image = UIImage(named: "tab-icon_settings_unselected_35w")//?.renderingMode(.alwaysOriginal)
+                    assignImageToTabBarItem(conversationsTabBarItem
+                        , forSelectedImage: "tab-icon_convs_selected_41w"
+                        , andUnselectedImage: "tab-icon_convs_unselected_41w")
+                    assignImageToTabBarItem(usersTabBarItem
+                        , forSelectedImage: "tab-icon_users_selected-white_31w"
+                        , andUnselectedImage: "tab-icon_users_unselected-white_31w")
+                    assignImageToTabBarItem(settingsTabBarItem
+                        , forSelectedImage: "tab-icon_settings_selected-white_35w"
+                        , andUnselectedImage: "tab-icon_settings_unselected_35w")
                 }
             }
         }
+    }
+    
+    static func assignImageToTabBarItem(_ tabBarItem: UITabBarItem, forSelectedImage selectedImageName: String, andUnselectedImage unselectedImageName: String) {
+        tabBarItem.selectedImage = UIImage(named: selectedImageName)
+        tabBarItem.image = UIImage(named: unselectedImageName)
     }
 }
 
