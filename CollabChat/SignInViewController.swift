@@ -24,15 +24,29 @@ class SignInViewController: UIViewController {
     //==================================================
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
-        guard let email = emailTextField.text, email.characters.count > 0
-            , let password = passwordTextField.text, password.characters.count > 0 else {
-                NSLog("Error: Missing email and/or password when attempting to sign in.")
-                return
+        if let email = emailTextField.text
+            , let password = passwordTextField.text {
+            
+            if email.characters.count == 0
+                || password.characters.count == 0 {
+                
+                ErrorController.presentErrorAlertController(withTitle: "Missing Required Details"
+                    , andMessage: "Both fields must have a value."
+                    , inViewController: self)
+            }
+            
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if let error = error {
+                    NSLog(error.localizedDescription)
+                    ErrorController.presentErrorAlertController(withTitle: ""
+                        , andMessage: error.localizedDescription
+                        , inViewController: self)
+                    return
+                }
+                
+                self.performSegue(withIdentifier: "SignInToTabBarController", sender: nil)
+            })
         }
-        
-        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
-            self.performSegue(withIdentifier: "SignInToTabBarController", sender: nil)
-        })
     }
     
     //==================================================
@@ -57,25 +71,6 @@ class SignInViewController: UIViewController {
         setupViewElements()
         ThemeManager.applyTheme(toView: self.view)
     }
-    
-    //==================================================
-    // MARK: - Navigation
-    //================================================== 
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "SignInToTabBarController" {
-//            if let tabBarController = segue.destination as? UITabBarController
-//                , let navCont = tabBarController.viewControllers?.first
-//                , let conversationMainViewController = {
-//                
-//                
-//                ThemeManager.tabBarController = conversationMainViewController.tabBarController
-//                ThemeManager.applyTheme(toView: conversationMainViewController.view)
-//            }
-//        }
-    }
-    
 }
 
 

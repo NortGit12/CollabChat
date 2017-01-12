@@ -58,8 +58,8 @@ class SignUpViewController: UIViewController {
                     , inViewController: self)
             }
             
+            // Create the user in Firebase
             FIRAuth.auth()!.createUser(withEmail: email, password: password) { (user, error) in
-                
                 if let error = error {
                     NSLog(error.localizedDescription)
                     ErrorController.presentErrorAlertController(withTitle: ""
@@ -68,6 +68,7 @@ class SignUpViewController: UIViewController {
                     return
                 }
                 
+                // Adding some extra profile detials
                 let userProfileData = [
                     "email": email
                     , "firstName": firstName
@@ -75,10 +76,12 @@ class SignUpViewController: UIViewController {
                     , "username": username
                 ]
                 
+                // Add user profile data
                 if let user = user {
                     let usersRef = FIRDatabase.database().reference().child("users")
                     usersRef.child(user.uid).setValue(userProfileData)
                     
+                    // Sign in
                     FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                         if let error = error {
                             NSLog(error.localizedDescription)
@@ -88,6 +91,7 @@ class SignUpViewController: UIViewController {
                             return
                         }
                         
+                        self.resignFirstResponder()
                         self.performSegue(withIdentifier: "SignUpToTabBarController", sender: self)
                     })
                 }
