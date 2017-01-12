@@ -23,6 +23,30 @@ class SignInViewController: UIViewController {
     // MARK: - Actions
     //==================================================
     
+    @IBAction func forgotPasswordButtonTapped(_ sender: UIButton) {
+        guard let email = emailTextField.text, email.characters.count > 0 else {
+            ErrorController.presentErrorAlertController(withTitle: "Email Details"
+                , andMessage: "Provide an email address in order to receive a password reset email."
+                , inViewController: self)
+            return
+        }
+        
+        FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
+            if let error = error {
+                NSLog(error.localizedDescription)
+                ErrorController.presentErrorAlertController(withTitle: ""
+                    , andMessage: error.localizedDescription
+                    , inViewController: self)
+                return
+            }
+            
+            let successAlertController = UIAlertController(title: nil, message: "Password reset e-mail sent.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            successAlertController.addAction(okAction)
+            self.present(successAlertController, animated: true, completion: nil)
+        })
+    }
+    
     @IBAction func signInButtonTapped(_ sender: UIButton) {
         if let email = emailTextField.text
             , let password = passwordTextField.text {
