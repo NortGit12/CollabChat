@@ -15,6 +15,7 @@ class SignInViewController: UIViewController {
     // MARK: - _Properties
     //==================================================
     
+//    var activityIndicatorView = UIActivityIndicatorView()
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
@@ -26,7 +27,7 @@ class SignInViewController: UIViewController {
     @IBAction func forgotPasswordButtonTapped(_ sender: UIButton) {
         
         if !ValidationController.allItemsAreNonEmpty(inTextFieldsArray: [emailTextField]) {
-            ErrorController.presentErrorAlertController(withTitle: "Email Details"
+            PresentationController.showErrorAlertController(withTitle: "Email Details"
                 , andMessage: "Provide an email address in order to receive a password reset email."
                 , inViewController: self)
             return
@@ -37,7 +38,7 @@ class SignInViewController: UIViewController {
             FIRAuth.auth()?.sendPasswordReset(withEmail: email, completion: { (error) in
                 if let error = error {
                     NSLog(error.localizedDescription)
-                    ErrorController.presentErrorAlertController(withTitle: ""
+                    PresentationController.showErrorAlertController(withTitle: ""
                         , andMessage: error.localizedDescription
                         , inViewController: self)
                     return
@@ -53,7 +54,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func signInButtonTapped(_ sender: UIButton) {
         if !ValidationController.allItemsAreNonEmpty(inTextFieldsArray: [emailTextField, passwordTextField]) {
-            ErrorController.presentErrorAlertController(withTitle: "Missing Required Details"
+            PresentationController.showErrorAlertController(withTitle: "Missing Required Details"
                 , andMessage: "Both fields must have a value."
                 , inViewController: self)
             return
@@ -62,10 +63,13 @@ class SignInViewController: UIViewController {
         if let email = emailTextField.text
             , let password = passwordTextField.text {
             
+            let activityIndicatoryView = PresentationController.startActivityIndicatorView(inView: self.view, withMessage: "Signing in...")
             FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                PresentationController.stopActivityIndicatorView(activityIndicatoryView)
+                
                 if let error = error {
                     NSLog(error.localizedDescription)
-                    ErrorController.presentErrorAlertController(withTitle: ""
+                    PresentationController.showErrorAlertController(withTitle: ""
                         , andMessage: error.localizedDescription
                         , inViewController: self)
                     return
@@ -90,13 +94,19 @@ class SignInViewController: UIViewController {
     //==================================================
     // MARK: - View Lifecycle
     //==================================================
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupViewElements()
         ThemeManager.applyTheme(toView: self.view)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        emailTextField.text = ""
+        passwordTextField.text = ""
     }
 }
 

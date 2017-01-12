@@ -15,6 +15,7 @@ class SettingsMainViewController: UIViewController {
     // MARK: - _Properties
     //==================================================
     
+    var activityIndicatorView = UIActivityIndicatorView()
 //    @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var darkThemeButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
@@ -33,15 +34,19 @@ class SettingsMainViewController: UIViewController {
     //==================================================
     
     @IBAction func signOutButtonTapped(_ sender: UIButton) {
+//        let activityIndicatoryView = PresentationController.startActivityIndicatorView(inView: self.view, withMessage: "Signing out...")
+        
         do {
             try FIRAuth.auth()?.signOut()
+//            PresentationController.stopActivityIndicatorView(activityIndicatoryView)
             
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let signInViewController = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController")
             present(signInViewController, animated: true, completion: nil)
         } catch let error as NSError {
+//            PresentationController.stopActivityIndicatorView(activityIndicatoryView)
             NSLog(error.localizedDescription)
-            ErrorController.presentErrorAlertController(withTitle: ""
+            PresentationController.showErrorAlertController(withTitle: ""
                 , andMessage: error.localizedDescription
                 , inViewController: self)
             return

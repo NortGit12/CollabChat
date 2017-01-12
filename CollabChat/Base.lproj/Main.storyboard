@@ -240,7 +240,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="all fields are required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efN-uj-vwM">
-                                <rect key="frame" x="108" y="154" width="160" height="21"/>
+                                <rect key="frame" x="108" y="143" width="160" height="21"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -253,9 +253,11 @@
                             <constraint firstAttribute="trailing" secondItem="ICY-jr-k3k" secondAttribute="trailing" constant="16" id="570-G1-qAv"/>
                             <constraint firstItem="VU2-It-pDh" firstAttribute="leading" secondItem="TxR-eo-nli" secondAttribute="leading" constant="16" id="69y-VO-qYG"/>
                             <constraint firstItem="i2V-Zp-AP7" firstAttribute="top" secondItem="POr-Lo-zWT" secondAttribute="bottom" constant="48" id="AWl-H5-rF1"/>
+                            <constraint firstItem="efN-uj-vwM" firstAttribute="top" secondItem="POr-Lo-zWT" secondAttribute="bottom" constant="8" id="Biv-48-kVk"/>
                             <constraint firstItem="Kzi-Za-IFi" firstAttribute="leading" secondItem="TxR-eo-nli" secondAttribute="leading" constant="16" id="Bzp-8D-Q2D"/>
                             <constraint firstItem="opF-av-hGE" firstAttribute="centerX" secondItem="TxR-eo-nli" secondAttribute="centerX" id="CpU-Tn-636"/>
                             <constraint firstItem="Kzi-Za-IFi" firstAttribute="top" secondItem="ICY-jr-k3k" secondAttribute="bottom" constant="12" id="EX5-Lh-rVg"/>
+                            <constraint firstItem="efN-uj-vwM" firstAttribute="centerX" secondItem="TxR-eo-nli" secondAttribute="centerX" id="GCw-6A-SL6"/>
                             <constraint firstItem="VU2-It-pDh" firstAttribute="top" secondItem="jmJ-sA-izC" secondAttribute="bottom" constant="12" id="GN3-HU-Deh"/>
                             <constraint firstItem="ICY-jr-k3k" firstAttribute="top" secondItem="VU2-It-pDh" secondAttribute="bottom" constant="15" id="Ite-rt-PCw"/>
                             <constraint firstItem="POr-Lo-zWT" firstAttribute="top" secondItem="0nk-qp-PuR" secondAttribute="bottom" constant="35" id="Lpq-c5-3LK"/>
@@ -277,7 +279,6 @@
                             <constraint firstAttribute="trailing" secondItem="Cc6-aT-9YB" secondAttribute="trailing" constant="16" id="fil-4l-39y"/>
                             <constraint firstItem="jmJ-sA-izC" firstAttribute="centerX" secondItem="TxR-eo-nli" secondAttribute="centerX" id="hMG-t0-gZj"/>
                             <constraint firstItem="ICY-jr-k3k" firstAttribute="leading" secondItem="TxR-eo-nli" secondAttribute="leading" constant="16" id="lm8-NQ-PlW"/>
-                            <constraint firstItem="i2V-Zp-AP7" firstAttribute="top" secondItem="efN-uj-vwM" secondAttribute="bottom" constant="8" id="lwc-V9-Qlv"/>
                             <constraint firstAttribute="trailing" secondItem="i2V-Zp-AP7" secondAttribute="trailing" constant="16" id="n6T-Bz-lzW"/>
                             <constraint firstItem="Kzi-Za-IFi" firstAttribute="centerX" secondItem="TxR-eo-nli" secondAttribute="centerX" id="omF-81-cvf"/>
                             <constraint firstItem="i2V-Zp-AP7" firstAttribute="centerX" secondItem="TxR-eo-nli" secondAttribute="centerX" id="q7m-sO-OCM"/>
@@ -314,6 +315,6 @@
         <image name="touchIDArrow" width="13" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AEj-6Q-bS6"/>
+        <segue reference="5B3-NP-Neb"/>
     </inferredMetricsTieBreakers>
 </document>

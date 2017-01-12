@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     // MARK: - _Properties
     //==================================================
     
+    var activityIndicatorView = UIActivityIndicatorView()
     @IBOutlet weak var alreadyHaveAccountButton: UIButton!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -36,7 +37,7 @@ class SignUpViewController: UIViewController {
         if !ValidationController.allItemsAreNonEmpty(inTextFieldsArray: [confirmPasswordTextField, emailTextField, firstNameTextField
             , lastNameTextField, passwordTextField, usernameTextField]) {
             
-            ErrorController.presentErrorAlertController(withTitle: "Missing Required Details"
+            PresentationController.showErrorAlertController(withTitle: "Missing Required Details"
                 , andMessage: "All fields must have a value."
                 , inViewController: self)
         }
@@ -49,16 +50,18 @@ class SignUpViewController: UIViewController {
             , let username = usernameTextField.text {
             
             if password != confirmPassword {
-                ErrorController.presentErrorAlertController(withTitle: "Passwords Must Match"
+                PresentationController.showErrorAlertController(withTitle: "Passwords Must Match"
                     , andMessage: "Password and Confirm password do not match.  Try again."
                     , inViewController: self)
             }
             
             // Create the user in Firebase
+            let activityIndicatoryView = PresentationController.startActivityIndicatorView(inView: self.view, withMessage: "Signing up...")
             FIRAuth.auth()!.createUser(withEmail: email, password: password) { (user, error) in
                 if let error = error {
+                    PresentationController.stopActivityIndicatorView(activityIndicatoryView)
                     NSLog(error.localizedDescription)
-                    ErrorController.presentErrorAlertController(withTitle: ""
+                    PresentationController.showErrorAlertController(withTitle: ""
                         , andMessage: error.localizedDescription
                         , inViewController: self)
                     return
@@ -79,9 +82,11 @@ class SignUpViewController: UIViewController {
                     
                     // Sign in
                     FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                        PresentationController.stopActivityIndicatorView(activityIndicatoryView)
+                        
                         if let error = error {
                             NSLog(error.localizedDescription)
-                            ErrorController.presentErrorAlertController(withTitle: ""
+                            PresentationController.showErrorAlertController(withTitle: ""
                                 , andMessage: error.localizedDescription
                                 , inViewController: self)
                             return
@@ -120,6 +125,17 @@ class SignUpViewController: UIViewController {
 
         setupViewElements()
         ThemeManager.applyTheme(toView: self.view)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        confirmPasswordTextField.text = ""
+        emailTextField.text = ""
+        firstNameTextField.text = ""
+        lastNameTextField.text = ""
+        passwordTextField.text = ""
+        usernameTextField.text = ""
     }
 }
 
