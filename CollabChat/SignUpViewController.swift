@@ -33,24 +33,20 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        if !ValidationController.allItemsAreNonEmpty(inTextFieldsArray: [confirmPasswordTextField, emailTextField, firstNameTextField
+            , lastNameTextField, passwordTextField, usernameTextField]) {
+            
+            ErrorController.presentErrorAlertController(withTitle: "Missing Required Details"
+                , andMessage: "All fields must have a value."
+                , inViewController: self)
+        }
+        
         if let confirmPassword = confirmPasswordTextField.text
             , let email = emailTextField.text
             , let firstName = firstNameTextField.text
             , let lastName = lastNameTextField.text
             , let password = passwordTextField.text
             , let username = usernameTextField.text {
-            
-            if confirmPassword.characters.count == 0
-                || email.characters.count == 0
-                || firstName.characters.count == 0
-                || lastName.characters.count == 0
-                || password.characters.count == 0
-                || username.characters.count == 0 {
-                
-                ErrorController.presentErrorAlertController(withTitle: "Missing Required Details"
-                    , andMessage: "All fields must have a value."
-                    , inViewController: self)
-            }
             
             if password != confirmPassword {
                 ErrorController.presentErrorAlertController(withTitle: "Passwords Must Match"
@@ -103,13 +99,6 @@ class SignUpViewController: UIViewController {
     // MARK: - Methods
     //==================================================
     
-//    private func presentErrorAlertController(withTitle title: String, andMessage message: String) {
-//        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-//        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//        alertController.addAction(okAction)
-//        present(alertController, animated: true, completion: nil)
-//    }
-    
     private func setupViewElements() {
     
         alreadyHaveAccountButton.layer.cornerRadius = 20
@@ -132,16 +121,27 @@ class SignUpViewController: UIViewController {
         setupViewElements()
         ThemeManager.applyTheme(toView: self.view)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
