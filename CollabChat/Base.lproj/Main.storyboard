@@ -83,39 +83,21 @@
                                     <action selector="signInButtonTapped:" destination="JLN-nM-ZKp" eventType="touchUpInside" id="WMb-WK-yJ6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchIDArrow" translatesAutoresizingMaskIntoConstraints="NO" id="wL4-Kg-kEG">
-                                <rect key="frame" x="180" y="599" width="15" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="15" id="cK3-Qj-hkq"/>
-                                    <constraint firstAttribute="height" constant="60" id="pGa-gY-78y"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or use Touch ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKV-xc-tbe">
-                                <rect key="frame" x="121.5" y="570" width="131" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <color key="textColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="B8C-cJ-7Pb" secondAttribute="trailing" constant="16" id="4rJ-38-XVV"/>
                             <constraint firstItem="B8C-cJ-7Pb" firstAttribute="top" secondItem="9Lf-r1-WxA" secondAttribute="bottom" constant="15" id="5Dd-Rr-LNm"/>
-                            <constraint firstItem="wL4-Kg-kEG" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="7Rj-zR-VXh"/>
                             <constraint firstItem="aAp-0T-vrH" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="8QN-gQ-WJN"/>
                             <constraint firstAttribute="trailing" secondItem="TeM-nK-hOo" secondAttribute="trailing" constant="16" id="8sb-6D-kvz"/>
                             <constraint firstItem="oxc-y5-Fsc" firstAttribute="top" secondItem="TeM-nK-hOo" secondAttribute="bottom" constant="40" id="9I1-hw-fSC"/>
                             <constraint firstItem="oxc-y5-Fsc" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="A5g-g9-svf"/>
-                            <constraint firstItem="wL4-Kg-kEG" firstAttribute="top" secondItem="wKV-xc-tbe" secondAttribute="bottom" constant="8" id="AKs-ho-efQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ApV-hb-rFw" secondAttribute="trailing" constant="34" id="EKu-QF-lIC"/>
                             <constraint firstItem="TeM-nK-hOo" firstAttribute="top" secondItem="B8C-cJ-7Pb" secondAttribute="bottom" constant="25" id="FJX-UT-vEx"/>
                             <constraint firstItem="B8C-cJ-7Pb" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="Hfs-s3-XXQ"/>
                             <constraint firstItem="B8C-cJ-7Pb" firstAttribute="leading" secondItem="PmQ-yd-KEB" secondAttribute="leading" constant="16" id="Ocw-tI-N1c"/>
                             <constraint firstItem="aAp-0T-vrH" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="SaE-lq-Z6x"/>
                             <constraint firstItem="9Lf-r1-WxA" firstAttribute="leading" secondItem="PmQ-yd-KEB" secondAttribute="leading" constant="16" id="Ubr-UR-8hM"/>
-                            <constraint firstItem="qP1-UP-3hm" firstAttribute="top" secondItem="wL4-Kg-kEG" secondAttribute="bottom" constant="8" id="WZw-6u-z5e"/>
-                            <constraint firstItem="wKV-xc-tbe" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="fQv-LZ-fpJ"/>
-                            <constraint firstItem="wL4-Kg-kEG" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="fwc-Wz-Wfx"/>
                             <constraint firstItem="aAp-0T-vrH" firstAttribute="top" secondItem="oxc-y5-Fsc" secondAttribute="bottom" constant="25" id="gzb-zh-c4d"/>
                             <constraint firstItem="ApV-hb-rFw" firstAttribute="centerX" secondItem="PmQ-yd-KEB" secondAttribute="centerX" id="hDj-uT-I5V"/>
                             <constraint firstItem="9Lf-r1-WxA" firstAttribute="top" secondItem="ApV-hb-rFw" secondAttribute="bottom" constant="48" id="hWQ-3T-laE"/>
@@ -312,9 +294,8 @@
     </scenes>
     <resources>
         <image name="collabchat-title" width="882" height="138"/>
-        <image name="touchIDArrow" width="13" height="72"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5B3-NP-Neb"/>
+        <segue reference="AEj-6Q-bS6"/>
     </inferredMetricsTieBreakers>
 </document>

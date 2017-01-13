@@ -25,7 +25,6 @@
 		1F41C2BD1E0C889A0052B9B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */; };
 		1F41C2BF1E0C95300052B9B6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C2BE1E0C95300052B9B6 /* SignInViewController.swift */; };
 		1F41C2C11E0C953B0052B9B6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41C2C01E0C953B0052B9B6 /* SignUpViewController.swift */; };
-		1F6E97401E27F39000B185FC /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E973F1E27F39000B185FC /* FirebaseController.swift */; };
 		1F6E97421E2803E500B185FC /* ValidationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E97411E2803E500B185FC /* ValidationController.swift */; };
 		2C24F8C4C628D3C9151015A6 /* Pods_CollabChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DFD77DF58DE99418D2F8F2 /* Pods_CollabChatTests.framework */; };
 		978C2CCF58730EABC2E90FF2 /* Pods_CollabChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5849F8B532761F2643837534 /* Pods_CollabChat.framework */; };
@@ -73,7 +72,6 @@
 		1F41C2BA1E0C86750052B9B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F41C2BE1E0C95300052B9B6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		1F41C2C01E0C953B0052B9B6 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		1F6E973F1E27F39000B185FC /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		1F6E97411E2803E500B185FC /* ValidationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationController.swift; sourceTree = "<group>"; };
 		2DD64C3903807F3915EE2702 /* Pods-CollabChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollabChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollabChat/Pods-CollabChat.debug.xcconfig"; sourceTree = "<group>"; };
 		5849F8B532761F2643837534 /* Pods_CollabChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CollabChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +130,6 @@
 			children = (
 				1F2F1E0E1E0DD19100034192 /* AppearanceController.swift */,
 				1F3579331E26FA470036D8FB /* PresentationController.swift */,
-				1F6E973F1E27F39000B185FC /* FirebaseController.swift */,
 				1F6E97411E2803E500B185FC /* ValidationController.swift */,
 			);
 			name = OtherControllers;
@@ -527,7 +524,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6E97401E27F39000B185FC /* FirebaseController.swift in Sources */,
 				1F3579341E26FA470036D8FB /* PresentationController.swift in Sources */,
 				1F301B021E2593AC0022496E /* UsersMainViewController.swift in Sources */,
 				1F6E97421E2803E500B185FC /* ValidationController.swift in Sources */,
